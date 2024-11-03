@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Archivo+Black&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor-2);
+    padding: 15px;
+    transition: 0.5s;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+
+ul li{
+     display: inline-block;
+    margin: 10px 20px;
+    font-size: 15px;
+    cursor: pointer; 
+}
+
+ul li a:hover{
+     font-size: 22px;
+    color: black; 
+
+}
+
+
+.toggle-icon{
+    width: 26px;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-right: 25px;
+    transition: 0.5s;
+}
+
+
+.user-icon{
+    width: 28px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+
+.search-box{
+    display: flex;
+    align-items: center;
+    background: var(--cor-1);
+    padding: 10px 20px;
+    border-radius: 50px;
+    height: 40px;
+    width: 240px;
+    transition: 0.5s;
+}
+
+.search-box input{
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--cor-2);
+    font-family: 18px;
+    max-width: 200px;
+    transition: 0.5s;
+}
+
+.search-box input::placeholder{
+    color: var(--cor-2);
+}
+
+.search-box img{
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.text_navbar{
+    color: var(--cor-1);
+    font-size: 15px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    transition: 0.5s;
+    text-decoration:none;
+    padding: 15px;
+}
+
+.text_navbar:hover {
+    font-size: 20px;
+    color: var(--cor-1);
+
+}
+
+
+.dark .text_navbar{
+    color: var(--cor-2);
+    font-size: 15px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-decoration:none;
+}
+
+.dark .text_navbar:hover {
+    font-size: 20px;
+    color: var(--cor-4);
+
+}
+
+.dark ul li a:hover{
+    font-size: 20px;
+    color: var(--cor-4);
+
+
+}
+
+.dark .navbar{
+    background: var(--cor-1);
+    color: var(--cor-2);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.dark .search-box{
+    background: var(--cor-2);
+
+}
+
+.dark .search-box input{
+    color: #222;
+}
+
+.dark .search-box input::placeholder{
+    color: var(--cor-1)
+}
+
+.foto-plantas{
+    width: 275px;
+    height: 310px;
+}
+
+
+
+
+
+.navbar {
+    position: relative; 
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    background-color: var(--cor-2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+    min-width: 150px; 
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+    -webkit-box-shadow: -8px 15px 35px -22px rgba(0,0,0,1);
+    -moz-box-shadow: -8px 15px 35px -22px rgba(0,0,0,1);
+    box-shadow: -8px 15px 35px -22px rgba(0,0,0,1);
+
+  }
+
+  .dark .dropdown-menu {
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    background-color: var(--cor-1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+    min-width: 150px; 
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+    -webkit-box-shadow: -8px 15px 35px -22px rgba(0,0,0,1);
+    -moz-box-shadow: -8px 15px 35px -22px rgba(0,0,0,1);
+    box-shadow: -8px 15px 35px -22px rgba(0,0,0,1);
+    
+
+  }
+  
+  .dropdown-item {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor-1);
+    font-size: 18px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-decoration:none;
+    transition: 0.5s;
+  }
+  
+.dark   .dropdown-item {
+    display: block;
+    text-decoration: none;
+    color: var(--cor-2);
+    font-size: 18px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-decoration:none;
+    transition: 0.5s;
+  }
+
+  .dark .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: var(--cor-1);
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+  }
+
+ .dropdown-item:hover {
+    background-color: var(--cor-1); 
+    color: var(--cor-2);
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+  }
+
+
+
+
+  .dropdown-item-log {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor-1);
+    font-size: 18px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-decoration:none;
+    transition: 0.5s;
+  }
+  
+.dark   .dropdown-item-log {
+    display: block;
+    text-decoration: none;
+    color: var(--cor-2);
+    font-size: 18px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-decoration:none;
+    transition: 0.5s;
+  }
+
+.dropdown-item-log:hover {
+    background-color: var(--cor-1); /* Cor ao passar o mouse */
+    color: var(--cor-2);
+    transition: 0.5s;
+    
+  }
+
+  .dark .dropdown-item-log:hover {
+    background-color: var(--cor-2); /* Cor ao passar o mouse */
+    color: var(--cor-1);
+    transition: 0.5s;
+  }
+
+  
+
+  .search-box {
+    position: relative; 
+    width: 260px;
+    max-width: 400px; 
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 40px 10px 15px; 
+    border-radius: 4px; 
+    font-size: 16px; 
+}
+
+.search-box button {
+    position: absolute; 
+    top: 50%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.search-box img {
+    width: 20px; 
+    height: 20px;
+}
+
+  
+
+  
+  
